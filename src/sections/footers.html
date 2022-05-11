@@ -1,0 +1,40 @@
+<html lang="en">
+@@include("./_header.html", {"path":".."})
+
+<body>
+
+    @@include("./_navigation.html", {"path":"..", "navbg": "navbar-light", "theme":"pinnacle"})
+
+    <main>
+
+        <div class="content-header mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-2">Footers</h1>
+                        <p class="lead mt-3">
+                            A footer is a navigation component. It can hold links, company info, forms
+                            and more.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-6 elements-section">
+            <div class="row">
+                <div class="col-12">
+                    @@include("./sections/_footers.html", {"path":".."})
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    @@include("./_footer.html", {"path":"..", "theme":"pinnacle"})
+
+    @@include("./_scripts.html", {"path":".."})
+
+
+</body>
+
+</html>

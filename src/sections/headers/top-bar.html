@@ -1,0 +1,251 @@
+<html lang="en">
+@@include("./_header.html", {"path":"../.."})
+
+<body>
+
+    <header class="container-fluid">
+        <div class="container mb-2">
+            <div class="d-flex align-items-center">
+                <ul class="nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  text-dark fs-6 text-muted" type="button" id="countriesDddl"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="../../assets/img/demo/us-flag.svg" alt="us flag" style="width: 1.25rem;"
+                                class="pb-1" />
+                            United States
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="countriesDddl">
+                            <li><a class="dropdown-item fs-6" href="#!">English</a></li>
+                            <li><a class="dropdown-item fs-6" href="#!">Espanol</a></li>
+                            <li><a class="dropdown-item fs-6" href="#!">French</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="ms-auto me-3">
+                    <ul class="list-inline m-0 d-none d-md-block">
+                        <li class="list-inline-item">
+                            <a href="#!" class="text-dark opacity-50 fs-6">
+                                Support
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#!" class="text-dark opacity-50 fs-6">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="list-inline m-0">
+                    <li class="list-inline-item me-3">
+                        <a href="#!" class="text-dark opacity-50 fs-6">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item dropdown me-3">
+                        <a class="text-dark opacity-50 fs-6" type="button" id="cartDddl" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="cartDddl">
+                            <div class="p-4 text-center">
+                                <span class="d-block h6 mb-2">
+                                    <i class="fa-solid fa-cart-arrow-down"></i>
+                                </span>
+                                <span class="d-block h6">
+                                    Your cart is empty
+                                </span>
+                            </div>
+                        </ul>
+                    </li>
+                    <li class="list-inline-item dropdown me-3">
+                        <a class="text-dark opacity-50 fs-6" type="button" id="userDddl" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="userDddl">
+                            <li>
+                                 <a class="dropdown-item fs-6" href="#!">
+                                     <i class="fa-solid fa-id-badge pe-2"></i>
+                                     Profile
+                                 </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item fs-6" href="#!">
+                                    <i class="far fa-sun pe-2"></i>
+                                    Settings
+                                </a>
+                            </li>
+                            <li>
+                                 <a class="dropdown-item fs-6" href="#!">
+                                     <i class="fa-solid fa-right-from-bracket pe-2"></i>
+                                     Sign out
+                                 </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="../../">
+                    <img src="../../assets/img/logo.svg" alt="logo" />
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../index.html">Overview</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="ddlsections" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Start
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="row py-2">
+                                    <div class="col">
+                                        <a class="dropdown-item" href="../../sections/cta.html">Call-to-Action
+                                            (CTA)</a>
+                                        <a class="dropdown-item" href="../../sections/clients.html">Clients</a>
+                                        <a class="dropdown-item" href="../../sections/features.html">Features</a>
+                                        <a class="dropdown-item" href="../../sections/footers.html">Footers</a>
+                                        <a class="dropdown-item" href="../../sections/headers.html">Headers</a>
+                                        <a class="dropdown-item" href="../../sections/hero.html">Hero</a>
+                                        <a class="dropdown-item" href="../../sections/pricing.html">Pricing</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="ddlComponents" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Components
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-lg">
+                                <div class="container-fluid">
+                                    <div class="row py-3">
+                                        <div class="col-md-4">
+
+                                            <a class="dropdown-item"
+                                                href="../../components/accordion.html">Accordion</a>
+                                            <a class="dropdown-item" href="../../components/alerts.html">Alerts</a>
+                                            <a class="dropdown-item" href="../../components/badge.html">Badges</a>
+                                            <a class="dropdown-item"
+                                                href="../../components/breadcrumb.html">Breadcrumb</a>
+                                            <a class="dropdown-item" href="../../components/buttons.html">Buttons</a>
+                                            <a class="dropdown-item" href="../../components/button-groups.html">Button
+                                                Groups</a>
+                                            <a class="dropdown-item" href="../../components/card.html">Cards</a>
+                                            <a class="dropdown-item" href="../../components/carousel.html">Carousel</a>
+                                            <a class="dropdown-item" href="../../components/dropdown.html">Dropdowns</a>
+
+
+                                        </div>
+                                        <div class="col-md-4">
+
+                                            <a class="dropdown-item" href="../../components/forms.html">Forms</a>
+                                            <a class="dropdown-item" href="../../components/list-groups.html">List
+                                                group</a>
+                                            <a class="dropdown-item" href="../../components/modal.html">Modal</a>
+                                            <a class="dropdown-item" href="../../components/navbar.html">Navbar</a>
+                                            <a class="dropdown-item" href="../../components/navs.html">Navs</a>
+                                            <a class="dropdown-item"
+                                                href="../../components/offcanvas.html">Offcanvas</a>
+                                            <a class="dropdown-item"
+                                                href="../../components/pagination.html">Pagination</a>
+                                            <a class="dropdown-item"
+                                                href="../../components/placeholders.html">Placeholders</a>
+                                            <a class="dropdown-item" href="../../components/popovers.html">Popovers</a>
+
+
+                                        </div>
+                                        <div class="col-md-4">
+
+
+                                            <a class="dropdown-item" href="../../components/progress.html">Progress</a>
+                                            <a class="dropdown-item" href="../../components/quote.html">Quote</a>
+                                            <a class="dropdown-item"
+                                                href="../../components/scrollspy.html">Scrollspy</a>
+                                            <a class="dropdown-item" href="../../components/spinners.html">Spinners</a>
+                                            <a class="dropdown-item" href="../../components/tables.html">Tables</a>
+                                            <a class="dropdown-item" href="../../components/toasts.html">Toasts</a>
+                                            <a class="dropdown-item" href="../../components/tooltips.html">Tooltip</a>
+                                            <a class="dropdown-item"
+                                                href="../../components/typography.html">Typography</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="ddlPages" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="row py-2">
+                                    <div class="col ps-3">
+                                       @@include("./sections/_pages.html")
+                                    </div>
+                                </div>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="ddlDocumentation" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Theme
+                            </a>
+                            <div class="dropdown-menu">
+                                <div class="row py-2">
+                                    <div class="col">
+                                        <a class="dropdown-item" href="../../components/all.html" target="_blank">All
+                                            Components</a>
+                                        <a class="dropdown-item" href="https://themesin.com/company/contact"
+                                            target="_blank">Support</a>
+
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="d-grid mt-3 mt-lg-0 px-2 px-lg-0">
+                        <a class="btn btn-primary btn-sm" href="../..">Home <i class="fas fa-home ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-header vh-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center py-5 py-xxl-10">
+                        <h1 class="text-dark">Header</h1>
+                        <h3 class="text-dark mt-3">Top bar nav</h3>
+                        <a href="../headers.html" class="btn btn-primary mt-3">Headers</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @@include("./_scripts.html", {"path":"../.."})
+
+</body>
+
+</html>

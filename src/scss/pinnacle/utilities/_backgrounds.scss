@@ -1,0 +1,11 @@
+@each $key,
+$value in $theme-colors {
+    @include bg-gradients-variant(".bg-gradient-#{$key}", $value);
+}
+
+
+
+@each $key,
+$value in $theme-colors {
+    @include bg-overlay-variant(".bg-overlay-#{$key}", $value);
+}

@@ -1,1 +1,1 @@
-# pinnacle-ui-kit
+# elegant-ui-kit

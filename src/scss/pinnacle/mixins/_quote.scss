@@ -1,0 +1,11 @@
+@mixin blockquote-variant($color) {
+
+    border-left: 3px solid $color;
+
+
+    .blockquote-title {
+        color: $color;
+
+    }
+
+}

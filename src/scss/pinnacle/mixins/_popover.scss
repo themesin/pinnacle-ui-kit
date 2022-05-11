@@ -1,0 +1,39 @@
+@mixin popover-variant($className, $color) {
+
+    &.popover-#{$className} {
+
+        background-color: $color;
+        border-color: $color;
+
+        .popover-body {
+            color: color-contrast($color);
+            opacity: .8;
+        }
+
+        .popover-header {
+            color: color-contrast($color);
+            background-color: transparent;
+
+            &:before {
+                border-color: transparent;
+            }
+        }
+
+        &.bs-popover-end .popover-arrow:after {
+            border-right-color: $color;
+        }
+
+        &.bs-popover-top .popover-arrow:after {
+            border-top-color: $color;
+        }
+
+        &.bs-popover-bottom .popover-arrow:after {
+            border-bottom-color: $color;
+        }
+
+        &.bs-popover-start .popover-arrow:after {
+            border-left-color: $color;
+        }
+
+    }
+}

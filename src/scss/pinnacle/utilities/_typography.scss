@@ -1,0 +1,62 @@
+.ls-1 {
+    letter-spacing: .0625rem;
+}
+
+.ls-2 {
+    letter-spacing: .09375rem;
+}
+
+.ls-3 {
+    letter-spacing: .125rem;
+}
+
+.ls-4 {
+    letter-spacing: .15625rem;
+}
+
+.list-style-none {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.user-selet-none{
+    user-select: none;
+}
+
+.text-underline {
+    text-decoration: underline !important;
+}
+
+.text-through {
+    text-decoration: line-through !important;
+}
+
+
+@each $key in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($key) {
+        .display-1-#{$key} {
+            font-size: $display-size-1
+        }
+
+        .display-2-#{$key} {
+            font-size: $display-size-2
+        }
+
+        .display-3-#{$key} {
+            font-size: $display-size-3
+        }
+
+        .display-4-#{$key} {
+            font-size: $display-size-4
+        }
+
+        .display-5-#{$key} {
+            font-size: $display-size-5
+        }
+
+        .display-6-#{$key} {
+            font-size: $display-size-6
+        }
+    }
+}

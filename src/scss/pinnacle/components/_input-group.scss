@@ -1,0 +1,27 @@
+.input-group {
+
+
+    & .input-group-text {
+        transition: $input-transition;
+    }
+
+    .input-group-text:not(:first-child) {
+        border-left: 0;
+    }
+
+    .input-group-text:not(:last-child) {
+        border-right: 0;
+    }
+
+    & .form-control {
+        box-shadow: none;
+        z-index: 1 !important;
+    }
+
+    &.input-group-focus .form-control,
+    &.input-group-focus .input-group-text {
+
+        border-color: $ui-input-group-focus-border-color;
+    }
+
+}

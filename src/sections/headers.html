@@ -1,0 +1,37 @@
+<html lang="en">
+@@include("./_header.html", {"path":".."})
+
+<body>
+
+    @@include("./_navigation.html", {"path":"..", "navbg": "navbar-light", "theme":"pinnacle"})
+
+    <main>
+
+        <div class="content-header mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-2">Headers</h1>
+                        <p class="lead mt-3 px-4">
+                            Display your branding, navigation, search, and more with theme's powerful header components
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include("./sections/_headers.html", {"path":".."})
+
+         
+
+
+    </main>
+
+    @@include("./_footer.html", {"path":"..", "theme":"pinnacle"})
+
+    @@include("./_scripts.html", {"path":".."})
+
+
+</body>
+
+</html>

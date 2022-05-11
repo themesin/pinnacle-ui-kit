@@ -1,0 +1,113 @@
+.btn {
+    text-transform: capitalize;
+    will-change: transform;
+
+    &.btn-icon {
+
+        padding: 0;
+        width: $btn-icon-size;
+        height: $btn-icon-size;
+        line-height: $btn-icon-size;
+        position: relative;
+        text-align: center;
+        box-shadow: $btn-icon-box-shadow;
+
+        & .btn-icon-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+        }
+
+        &.btn-lg {
+
+            width: $btn-icon-size-lg;
+            height: $btn-icon-size-lg;
+            line-height: $btn-icon-size-lg;
+
+            & .btn-icon-content {
+                font-size: 150%;
+            }
+
+        }
+
+        &.btn-sm {
+
+            width: $btn-icon-size-sm;
+            height: $btn-icon-size-sm;
+            line-height: $btn-icon-size-sm;
+
+
+            & .btn-icon-content {
+                font-size: 95%;
+            }
+
+        }
+
+    }
+
+
+    &.disabled:hover,
+    &:disabled:hover {
+        cursor: not-allowed;
+    }
+
+}
+
+
+.link-linkedin {
+    color: #0077b5 !important;
+}
+
+.link-google {
+    color: #db4437 !important;
+}
+
+.link-facebook {
+    color: #4267b2 !important;
+}
+
+.link-youtube {
+    color: #ff0000 !important;
+}
+
+
+.link-github {
+    color: #333 !important;
+}
+
+.link-twitter {
+    color: #1da1f2 !important;
+}
+
+.link-dribbble {
+    color: #ea4c89 !important;
+}
+
+
+.btn-auth {
+
+
+    background: $white;
+    border: 3px solid $gray-300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &.btn-auth-dark {
+        border-color: $white;
+    }
+
+    &:hover {
+        background: $white;
+    }
+
+    & img {
+        margin-right: .5rem;
+        width: 26px;
+        height: 26px;
+
+    }
+}

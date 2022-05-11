@@ -1,0 +1,26 @@
+.footer {
+    position: relative;
+
+    & .footer-social-btn-group {
+
+        a,
+        .btn {
+            margin: .25rem .375rem;
+        }
+    }
+
+
+    ul {
+        &.list-horizontal {
+
+            &:first-child a {
+                padding-left: 0;
+            }
+
+            &:last-child a {
+                padding-right: 0;
+            }
+        }
+
+    }
+}

@@ -1,0 +1,28 @@
+@mixin rotateX-deg($deg) {
+
+    -moz-transform: rotateX($deg);
+    -ms-transform: rotateX($deg);
+    -o-transform: rotateX($deg);
+    -webkit-transform: rotateX($deg);
+    transform: rotateX($deg);
+
+}
+
+
+@mixin rotateY-deg($deg) {
+
+    -moz-transform: rotateY($deg);
+    -ms-transform: rotateY($deg);
+    -o-transform: rotateY($deg);
+    -webkit-transform: rotateY($deg);
+    transform: rotateY($deg);
+
+}
+
+@mixin scale-deg($deg) {
+    -moz-transform: scale($deg);
+    -ms-transform: scale($deg);
+    -o-transform: scale($deg);
+    -webkit-transform: scale($deg);
+    transform: scale($deg);
+}

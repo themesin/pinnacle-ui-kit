@@ -1,0 +1,40 @@
+<html lang="en">
+@@include("./_header.html", {"path":".."})
+
+<body>
+
+    @@include("./_navigation.html", {"path":"..", "navbg": "navbar-light", "theme":"pinnacle"})
+
+    <main>
+
+        <div class="content-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-2">Pagination</h1>
+                        <p class="lead opacity-75 mt-3">
+                           Examples for showing pagination to indicate a series of related content exists across
+                           multiple pages
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-6">
+            <div class="row">
+                <div class="col-12">
+                    @@include("./components/_pagination.html", {"path":".."})
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    @@include("./_footer.html", {"path":"..", "theme":"pinnacle"})
+
+    @@include("./_scripts.html", {"path":".."})
+
+
+</body>
+
+</html>

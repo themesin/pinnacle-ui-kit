@@ -1,0 +1,272 @@
+<div class="container">
+    <div class="row">
+        
+        <div class="col-sm-6 mt-5">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Launch demo modal
+            </button>
+            <div class="modal fade" tabindex="-1" role="dialog" id="exampleModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content rounded-6 shadow">
+                        <div class="modal-body p-5">
+                            <h2 class="fw-bold mb-0">What's new</h2>
+
+                            <ul class="d-grid gap-4 my-4 list-unstyled">
+                                <li class="d-flex gap-4">
+                                    <i class="fa-solid fa-border-all fa-2x text-dark"></i>
+                                    <div>
+                                        <h5 class="mb-0">Grid view</h5>
+                                        Not into lists? Try the new grid view.
+                                    </div>
+                                </li>
+                                <li class="d-flex gap-4">
+                                    <i class="fa-solid fa-bookmark fa-2x text-primary"></i>
+                                    <div>
+                                        <h5 class="mb-0">Bookmarks</h5>
+                                        Save items you love for easy access later.
+                                    </div>
+                                </li>
+                                <li class="d-flex gap-4">
+                                    <i class="fa-solid fa-video fa-2x text-info"></i>
+                                    <div>
+                                        <h5 class="mb-0">Video embeds</h5>
+                                        Share videos wherever you go.
+                                    </div>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn btn-lg btn-primary mt-4 w-100"
+                                data-bs-dismiss="modal">Great, thanks!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mt-5">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalSignin">
+                Login
+            </button>
+            <div class="modal fade" tabindex="-1" role="dialog" id="modalSignin">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content rounded-5 shadow">
+                        <div class="modal-header p-5 pb-4 border-bottom-0">
+                            <h4 class="fw-bold mb-0">Sign up for free</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+
+                        <div class="modal-body p-5 pt-0">
+                            <form class="">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control rounded-4" id="inputEmail"
+                                        placeholder="name@example.com">
+                                    <label for="inputEmail">Email address</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control rounded-4" id="inputPassword"
+                                        placeholder="Password">
+                                    <label for="inputPassword">Password</label>
+                                </div>
+                                <button class="w-100 mb-2 btn btn-lg rounded-4 btn-primary" type="button"
+                                    data-bs-dismiss="modal">Sign
+                                    up</button>
+                                <small class="text-muted">By signin up, you agree to the terms of use.</small>
+                                <hr class="my-4">
+                                <h2 class="fs-5 fw-bold mb-3 text-center">Or</h2>
+                                <button class="w-100 py-2 mb-2 btn btn-outline-light rounded-4 btn-oauth" type="button">
+                                    <img src="@@path/assets/img/logos/google-logo.svg" alt="google-logo" />
+                                    <span class="text-dark">Continue with Google</span>
+                                </button>
+                                <button class="w-100 py-2 mb-2 btn btn-outline-light rounded-4 btn-oauth" type="button">
+                                    <img src="@@path/assets/img/logos/twitter-logo.svg" alt="twitter-logo" />
+                                    <span class="text-dark">Continue with Twitter</span>
+                                </button>
+                                <button class="w-100 py-2 mb-2 btn btn-outline-light rounded-4 btn-oauth" type="button">
+                                    <img src="@@path/assets/img/logos/github-logo.svg" alt="github-logo" />
+                                    <span class="text-dark">Continue with Github</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mt-5">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                Notification
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content bg-danger border-danger">
+                        <div class="modal-header border-0">
+                            <h5 class="modal-title text-white" id="exampleModalLabel">Attention</h5>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center">
+                            <i class="fas fa-bell fa-4x mb-3 text-white"></i>
+                            <p class="text-white mt-3 opacity-75">Lorem ipsum dolor sit amet, consectetur
+                                adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        <div class="py-4 px-3">
+                            <div class="d-flex justify-content-between">
+
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Accept</button>
+                                <button type="button" class="btn text-light" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 mt-5">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalPopovers">
+                Modal with Tooltip
+            </button>
+            <div class="modal fade" id="exampleModalPopovers" tabindex="-1" aria-labelledby="exampleModalPopoversLabel"
+                style="display: none;" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalPopoversLabel">Modal title</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <h5>Popover in a modal</h5>
+                            <p>This <a href="#!" data-bs-toggle="popover" role="button" class="btn btn-dark btn-sm"
+                                    title="" data-bs-content="Popover body content is set in this attribute."
+                                    data-bs-container="#exampleModalPopovers" data-bs-placement="top"
+                                    data-bs-original-title="Popover title">button</a> triggers a popover on click.</p>
+                            <hr>
+                            <h5>Tooltips in a modal</h5>
+                            <p><a href="#!" data-bs-toggle="tooltip" class="tooltip-test" title=""
+                                    data-bs-container="#exampleModalPopovers" data-bs-original-title="Tooltip">This
+                                    link</a> and
+                                <a href="#!" class="tooltip-test" data-bs-toggle="tooltip" title=""
+                                    data-bs-container="#exampleModalPopovers" data-bs-original-title="Tooltip">that
+                                    link</a> have tooltips on hover.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark btn-sm"
+                                data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-6 mt-5">
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#exampleModalFullscreen">Full screen Modal</button>
+
+            <div class="modal fade" id="exampleModalFullscreen" tabindex="-1"
+                aria-labelledby="exampleModalFullscreenLabel" style="display: none;" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title h4" id="exampleModalFullscreenLabel">Full screen modal</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Diam quam nulla porttitor massa id. Vel
+                                orci porta non pulvinar neque laoreet. Massa tincidunt nunc pulvinar sapien et
+                                ligula
+                                ullamcorper malesuada. Massa sed elementum tempus egestas sed sed risus. Nisl
+                                tincidunt
+                                eget nullam non nisi est sit amet facilisis. A diam maecenas sed enim ut sem viverra
+                                aliquet. Mattis vulputate enim nulla aliquet porttitor lacus. Amet mattis vulputate
+                                enim
+                                nulla aliquet porttitor lacus luctus accumsan. Nibh ipsum consequat nisl vel pretium
+                                lectus. Molestie at elementum eu facilisis sed odio morbi quis. At tempor commodo
+                                ullamcorper a lacus vestibulum. Odio tempor orci dapibus ultrices in iaculis nunc.
+                                Nisl
+                                pretium fusce id velit ut tortor pretium. Donec enim diam vulputate ut pharetra sit
+                                amet
+                                aliquam.
+                            </p>
+
+                            <p>
+                                Commodo quis imperdiet massa tincidunt nunc pulvinar sapien et. Quam quisque id diam
+                                vel
+                                quam. Mauris pharetra et ultrices neque ornare. Tellus in metus vulputate eu
+                                scelerisque
+                                felis imperdiet proin fermentum. Tortor at risus viverra adipiscing at in tellus
+                                integer
+                                feugiat. Tellus id interdum velit laoreet id donec. Diam phasellus vestibulum lorem
+                                sed
+                                risus ultricies tristique nulla. Velit scelerisque in dictum non consectetur a erat.
+                                Aliquet risus feugiat in ante metus dictum at tempor. Sit amet porttitor eget dolor
+                                morbi non arcu risus. Mattis nunc sed blandit libero volutpat sed cras ornare arcu.
+                                Odio
+                                ut enim blandit volutpat maecenas volutpat. Cum sociis natoque penatibus et magnis.
+                                Rhoncus aenean vel elit scelerisque. Sit amet dictum sit amet justo donec. Ac turpis
+                                egestas sed tempus urna. Sit amet mauris commodo quis.
+                            </p>
+
+                            <p>
+                                Eget nullam non nisi est. Feugiat in fermentum posuere urna nec tincidunt praesent
+                                semper. Justo nec ultrices dui sapien eget mi proin sed. Nisl vel pretium lectus
+                                quam
+                                id. Donec ac odio tempor orci dapibus ultrices in. Ultricies leo integer malesuada
+                                nunc.
+                                Faucibus vitae aliquet nec ullamcorper sit amet. Nunc sed velit dignissim sodales ut
+                                eu
+                                sem. Amet mauris commodo quis imperdiet massa tincidunt nunc. Mauris rhoncus aenean
+                                vel
+                                elit scelerisque. Platea dictumst vestibulum rhoncus est. Iaculis eu non diam
+                                phasellus
+                                vestibulum. Amet mattis vulputate enim nulla aliquet porttitor lacus luctus. Vitae
+                                ultricies leo integer malesuada. Scelerisque purus semper eget duis. Odio morbi quis
+                                commodo odio aenean. Vitae nunc sed velit dignissim sodales ut eu sem. Sit amet
+                                venenatis urna cursus eget.
+                            </p>
+
+
+                            <p>
+                                Amet justo donec enim diam vulputate ut. Eget nulla facilisi etiam dignissim diam.
+                                Interdum velit euismod in pellentesque massa placerat. Ut eu sem integer vitae justo. In
+                                egestas erat imperdiet sed euismod nisi porta lorem. Leo integer malesuada nunc vel
+                                risus
+                                commodo. Turpis egestas maecenas pharetra convallis posuere morbi leo urna molestie. Leo
+                                duis ut diam quam nulla. Leo in vitae turpis massa sed. Sit amet venenatis urna cursus
+                                eget.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 mt-5">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                data-bs-target="#exampleModalFullscreen2">Full
+                screen below lg Modal</button>
+            <div class="modal fade" id="exampleModalFullscreen2" tabindex="-1"
+                aria-labelledby="exampleModalFullscreenLabel" style="display: none;" aria-hidden="true">
+                <div class="modal-dialog modal-fullscreen-lg-down">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title h4" id="exampleModalFullscreenLabel">Full screen below lg modal</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ......
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

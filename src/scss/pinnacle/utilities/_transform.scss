@@ -1,0 +1,38 @@
+@include media-breakpoint-up(lg) {
+    .rotate-left {
+        transform: perspective(1080px) rotateY(-15deg) rotateX(2deg);
+
+    }
+
+    .rotate-right {
+        transform: perspective(1080px) rotate(-2deg) rotateY(18deg) rotateX(2deg);
+    }
+}
+
+.transform-none {
+    transform: none !important;
+}
+
+[class*="hover-translate-"],
+.translate-icon {
+    transition: transform .25s ease-in-out;
+}
+
+@for $number from 1 to 5 {
+
+    .hover-translate-up-#{$number}:hover {
+        transform: translate3d(0, -#{$number}px, 0);
+    }
+
+    .hover-translate-right-#{$number}:hover {
+        transform: translate3d(#{$number}px, 0, 0);
+    }
+
+    .hover-translate-down-#{$number}:hover {
+        transform: translate3d(0, #{$number}px, 0);
+    }
+
+    .hover-translate-left-#{$number}:hover {
+        transform: translate3d(-#{$number}px, 0, 0);
+    }
+}

@@ -1,0 +1,194 @@
+@mixin navbar-breakpoints() {
+
+
+    .navbar-transparent {
+        
+        background-color: transparent;
+
+        & .navbar-collapse {
+            border-radius: $border-radius;
+        }
+
+
+        &:not([class*="navbar-expand-"]) .navbar-collapse {
+
+            background-color: $gray-100;
+            padding: .625rem;
+            margin: .5rem 0;
+
+            .nav-link {
+                color: $navbar-light-color;
+
+                &:hover,
+                &:focus {
+                    color: $navbar-light-hover-color;
+                }
+
+                &.disabled {
+                    color: $navbar-light-disabled-color;
+                }
+            }
+
+            .show>.nav-link,
+            .nav-link.active {
+                color: $navbar-light-active-color;
+            }
+
+            // & .dropdown {
+
+            //     & .dropdown-toggle:after {
+            //         background-image: escape-svg($dropdown-light-button-icon);
+            //     }
+
+            // }
+
+            & .dropdown-menu {
+                box-shadow: none;
+                background: transparent;
+
+                & .dropdown-item,
+                & .dropdown-item:hover,
+                & .dropdown-item:focus {
+                    background-color: transparent;
+                }
+
+            }
+
+            & .navbar-text {
+
+                color: $navbar-light-color;
+
+                a,
+                a:hover,
+                a:focus {
+                    color: $navbar-light-active-color;
+                }
+            }
+
+        }
+
+
+    }
+
+    .navbar-expand {
+
+        & .navbar-nav {
+
+            & .dropdown-menu {
+
+                opacity: 0;
+                pointer-events: none;
+                margin: 0;
+
+
+                &.show {
+
+                    opacity: 1;
+                    pointer-events: auto;
+                    animation: animate-navbar-dropdown .25s ease forwards;
+                    box-shadow: $dropdown-box-shadow;
+                    background: $dropdown-bg;
+                }
+            }
+
+        }
+    }
+
+    @each $key in map-keys(map-remove($grid-breakpoints, xs)) {
+
+        @include media-breakpoint-up($key) {
+
+            .navbar-expand-#{$key} {
+
+                & .navbar-nav {
+
+                    & .dropdown-menu {
+
+                        opacity: 0;
+                        pointer-events: none;
+                        margin: 0;
+
+
+                        &.show {
+
+                            opacity: 1;
+                            pointer-events: auto;
+                            animation: animate-navbar-dropdown .25s ease forwards;
+                            box-shadow: $dropdown-box-shadow;
+                            background: $dropdown-bg;
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+        @include media-breakpoint-down($key) {
+
+            .navbar-expand-#{$key} {
+
+                &.navbar-transparent {
+
+                    & .navbar-collapse {
+
+                        background-color: $gray-100;
+                        padding: .625rem;
+                        margin: .5rem 0;
+
+                        .nav-link {
+                            color: $navbar-light-color;
+
+                            &:hover,
+                            &:focus {
+                                color: $navbar-light-hover-color;
+                            }
+
+                            &.disabled {
+                                color: $navbar-light-disabled-color;
+                            }
+                        }
+
+                        .show>.nav-link,
+                        .nav-link.active {
+                            color: $navbar-light-active-color;
+                        }
+
+                        // & .dropdown {
+
+                        //     & .dropdown-toggle:after {
+                        //         background-image: escape-svg($dropdown-light-button-icon);
+                        //     }
+
+                        // }
+
+                        & .dropdown-menu {
+                            box-shadow: none !important;
+                            background: transparent;
+
+                            & .dropdown-item,
+                            & .dropdown-item:hover,
+                            & .dropdown-item:focus {
+                                background-color: transparent;
+                            }
+
+                        }
+
+                        & .navbar-text {
+
+                            color: $navbar-light-color;
+
+                            a,
+                            a:hover,
+                            a:focus {
+                                color: $navbar-light-active-color;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+    }
+}

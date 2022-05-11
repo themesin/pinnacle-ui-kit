@@ -1,0 +1,29 @@
+.blockquote {
+
+    padding: .5rem 1rem .25rem;
+    display: block;
+
+    p {
+        padding: 1rem 0;
+    }
+
+    .blockquote-title {
+        margin-bottom: 0;
+        text-transform: capitalize;
+        padding: .75rem 0 1.25rem;
+
+    }
+
+    .blockquote-footer {
+        padding: 1rem 0;
+    }
+
+}
+
+
+@each $key,
+$value in $theme-colors {
+    .blockquote-#{$key} {
+        @include blockquote-variant($value);
+    }
+}

@@ -1,0 +1,31 @@
+.loader {
+
+    display: flex;
+    height: 100vh;
+    left: 0;
+    position: fixed;
+    top: 0;
+    transition: height .3s linear;
+    width: 100%;
+    z-index: 10000;
+    align-items: center;
+    justify-content: center;
+
+    &.done {
+        height: 0;
+
+        img {
+            height: 0;
+        }
+
+    }
+}
+
+.spin-logo {
+    position: relative;
+    width: 3rem;
+    animation: spin-y 1.5s linear infinite;
+    transform-origin: center center;
+    transform-style: preserve-3d;
+
+}

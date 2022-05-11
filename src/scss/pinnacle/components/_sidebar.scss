@@ -1,0 +1,94 @@
+.tui-vertical-container {
+    min-height: 100%;
+    position: relative;
+    height: 100%;
+}
+
+.tui-sidebar {
+
+
+    background: $body-bg;
+    padding: 1.5rem 0;
+    z-index: 100;
+
+
+
+    &.tui-sidebar-left {
+        left: 0;
+    }
+
+    &.tui-sidebar-right {
+        right: 0;
+    }
+
+    & .tui-sidebar-content {
+        padding: 0 1.5rem;
+
+
+        & .nav-link {
+            display: flex;
+            align-items: center;
+            padding-left: 0;
+            transition: color .2s linear, opacity .2s linear;
+        }
+    }
+
+    &.tui-sidebar-light {
+
+        .nav-link {
+            color: $gray-600;
+
+            &:hover,
+            &.active {
+                color: $primary;
+            }
+        }
+    }
+
+    &.tui-sidebar-dark {
+
+        .nav-link {
+            color: $gray-100;
+            opacity: .6;
+
+            &:hover,
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+
+    & [data-toggle="collapse"] {
+
+        position: relative;
+
+        &:after {
+            content: $arrow-down-icon;
+            margin-left: auto !important;
+            transition: all .2s ease-in-out;
+            display: inline-block;
+        }
+    }
+
+    & [data-toggle="collapse"]:not(.collapsed) {
+        &:after {
+            transform: rotate(90deg);
+        }
+    }
+
+}
+
+
+
+@media (min-width:992px) {
+    .tui-sidebar {
+        position: fixed;
+        overflow-y: auto;
+        top: 70px;
+        height: 100%;
+
+        & .tui-sidebar-content {
+            padding: 2rem 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+<html lang="en">
+@@include("./_header.html", {"path":".."})
+
+<body>
+
+    @@include("./_navigation.html", {"path":"..", "navbg": "navbar-light", "theme":"pinnacle"})
+
+    <main>
+
+        <div class="content-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-2">Modal</h1>
+                        <p class="lead opacity-75 mt-3">
+                            Modal plugin to add dialogs to your site for lightboxes, user notifications, or completely
+                            custom content
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-6">
+            <div class="row">
+                <div class="col-12">
+                    @@include("./components/_modal.html", {"path":".."})
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    @@include("./_footer.html", {"path":"..", "theme":"pinnacle"})
+
+    @@include("./_scripts.html", {"path":".."})
+
+
+</body>
+
+</html>

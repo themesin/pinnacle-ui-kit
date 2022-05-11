@@ -1,0 +1,14 @@
+.breadcrumb {
+
+    &[class*="bg-"] {
+
+        & .breadcrumb-item:first-child {
+            padding-left: .75rem;
+        }
+    }
+}
+
+.breadcrumb-transparent {
+    background: transparent;
+    padding: 0;
+}

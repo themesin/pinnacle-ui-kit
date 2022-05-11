@@ -1,0 +1,49 @@
+{
+  "name": "@themesin/pinnacle-ui-kit",
+  "version": "1.0.0",
+  "description": "pinnacle multipurpose bootstrap 5 ui kit by Themesin",
+  "main": "gulpfile.js",
+  "keywords": [
+    "bootstrap",
+    "bootstrap 5",
+    "bootstrap 5 ui kit",
+    "bootstrap ui kit",
+    "ui",
+    "responsive",
+    "ui",
+    "kit",
+    "theme",
+    "template",
+    "web",
+    "components"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/themesin/pinnacle-ui-kit.git"
+  },
+  "author": "Themesin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/themesin/pinnacle-ui-kit/issues"
+  },
+  "homepage": "https://github.com/themesin/pinnacle-ui-kit#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
+    "bootstrap": "^5.1.3"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-file-include": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-npm-dist": "^1.0.3",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-wait": "0.0.2"
+  }
+}

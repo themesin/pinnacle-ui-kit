@@ -1,0 +1,46 @@
+.list-group {
+
+    list-style-type: none;
+    min-width: 12rem;
+
+    &.list-group-transparent {
+
+        & .list-group-item {
+            background: transparent;
+        }
+    }
+}
+
+.list-group-checkable {
+    display: grid;
+    border: 0;
+
+    & .list-group-item {
+        cursor: pointer;
+        margin: .5rem 0;
+        border-radius: $border-radius-lg;
+    }
+}
+
+.list-group-item-check {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+    pointer-events: none;
+
+    &:hover+.list-group-item {
+        background-color: $list-group-hover-bg;
+        color: $list-group-action-color;
+    }
+
+    &:checked+.list-group-item {
+        color: $gray-100;
+        background-color: $primary;
+    }
+
+    &[disabled]+.list-group-item,
+    &:disabled+.list-group-item {
+         pointer-events: none;
+         filter: none;
+         opacity: .5;
+    }
+}

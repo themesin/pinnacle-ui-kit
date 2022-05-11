@@ -1,0 +1,23 @@
+.absolute-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@each $key,
+$value in $spacers {
+    .top-#{$key} {
+        top: $value;
+    }
+    .right-#{$key} {
+        right: $value;
+    }
+    .bottom-#{$key} {
+        bottom: $value;
+    }
+
+    .left-#{$key} {
+        left: $value;
+    }
+}

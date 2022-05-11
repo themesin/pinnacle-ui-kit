@@ -1,0 +1,74 @@
+// Themesin variables
+
+
+$opacities: ("opacitiy": (property: opacity,
+        values: (0: 0,
+            10: .1,
+            15:.15,
+            20:.2,
+            25: .25,
+            30: .3,
+            35: .35,
+            40:.4,
+            45:.45,
+            50: .5,
+            55:.55,
+            60:.6,
+            65:.65,
+            70: .7,
+            75: .75,
+            80:.8,
+            85:.85,
+            90:.9,
+            95:.95,
+            100: 1))) !default;
+
+$utilities: ($opacities) !default;
+
+$btn-icon-size: 3.125rem !default;
+$btn-icon-size-lg: 4.0625rem !default;
+$btn-icon-size-sm: 2.5rem !default;
+$btn-letter-spacing: .025em !default;
+$btn-icon-box-shadow: 0 .25rem .75rem 0 rgba($ui-component-box-shadow-color, .09),
+0 .25rem .9375rem -.125rem rgba($ui-component-box-shadow-color, .15) !default;
+
+$nav-pills-padding-x: 1.25rem;
+$nav-pills-padding-y: .5rem;
+$nav-pills-box-shadow: 0 .25rem 1.125rem 0 rgba($ui-component-box-shadow-color, .12),
+0 .5rem .625rem -.375rem rgba($ui-component-box-shadow-color, .15) !default;
+$nav-link-icon-padding: .375rem !default;
+$nav-link-transition: color .15s ease !default;
+$tab-content-padding: .5rem !default;
+
+$page-link-size-sm: 2rem !default;
+$page-link-size: 2.5rem !default;
+$page-link-size-lg:3rem !default;
+$page-link-shadow: 0 .25rem .75rem 0 rgba($ui-component-box-shadow-color, .18),
+0 .25rem .9375rem 0 rgba($ui-component-box-shadow-color, .15) !default;
+$page-item-padding-x: .1875rem !default;
+
+$label-font-size: 80% !default;
+$label-font-weight: bold !default;
+$label-letter-spacing: .5px !default;
+$label-text-transform: uppercase !default;
+
+$icon-font-family: "Font Awesome 5 Free" !default;
+
+$arrow-down-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg'  width='15' height='15' viewBox='0 0 256 256' fill='rgba(9,15,63,.5)'><polygon points='225.813, 48.907 128, 146.72 30.187, 48.907 0, 79.093 128, 207.093 256, 79.093'/></svg>") !default;
+
+$border-radius-xl: .75rem !default;
+$card-segment-bg: $dark !default;
+
+$dropdown-menu-min-width-xs: 11rem !default;
+$dropdown-menu-min-width-sm: 14rem !default;
+$dropdown-menu-min-width-md: 22rem !default;
+$dropdown-menu-min-width-lg: 30rem !default;
+$dropdown-menu-min-width-xl: 40rem !default;
+
+$dropdown-toggle-icon-code: "\f107" !default;
+$dropup-toggle-icon-code: "\f106" !default;
+$dropstart-toggle-icon-code: "\f104" !default;
+$dropend-toggle-icon-code: "\f105" !default;
+
+$dropdown-icon-font-weight: 600 !default;
+$dropdown-icon-font-size: 75% !default;

@@ -1,0 +1,39 @@
+<html lang="en">
+@@include("./_header.html", {"path":".."})
+
+<body>
+
+    @@include("./_navigation.html", {"path":"..", "navbg": "navbar-light", "theme":"pinnacle"})
+
+    <main>
+
+        <div class="content-header mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-2">Features</h1>
+                        <p class="lead mt-3">
+                            Explain the features, benefits, or other details of your business
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-6">
+            <div class="row">
+                <div class="col-12">
+                    @@include("./sections/_features.html", {"path":".."})
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    @@include("./_footer.html", {"path":"..", "theme":"pinnacle"})
+
+    @@include("./_scripts.html", {"path":".."})
+
+
+</body>
+
+</html>

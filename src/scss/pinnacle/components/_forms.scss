@@ -1,0 +1,140 @@
+.form-floating {
+
+
+    label {
+        font-size: 1.25rem;
+        opacity: .7;
+        background: $body-bg;
+        background-clip: content-box;
+        height: auto;
+        line-height: 1.75;
+    }
+
+    .card & label,
+    .card & .form-control.form-control-focus~label,
+    .card & .form-control:not(:placeholder-shown)~label {
+        background: $card-bg;
+        background-clip: content-box;
+    }
+
+    .modal-body & label,
+    .modal-body & .form-control.form-control-focus~label,
+    .modal-body & .form-control:not(:placeholder-shown)~label {
+        background: $modal-content-bg;
+        background-clip: content-box;
+    }
+
+    .form-control-focus~label,
+    .form-control:not(:placeholder-shown)~label {
+        color: $ui-input-focus-border-color;
+        opacity: 1;
+        padding-bottom: 0;
+        padding-top: 0;
+        border-radius: 50px;
+        background-clip: padding-box !important;
+    }
+
+    &~& {
+        margin-top: 1.25rem;
+    }
+}
+
+.form-group {
+    label {
+        font-size: $font-size-sm;
+        margin-bottom: $form-label-margin-bottom;
+    }
+}
+
+
+
+.form-control {
+
+
+
+
+    &.is-valid,
+    &.is-valid:focus,
+    .was-validated &:valid,
+    .was-validated &:focus:valid {
+
+        box-shadow: 0 0 0 .125rem $form-feedback-valid-color;
+        background-image: none;
+    }
+
+    &.is-invalid,
+    &.is-invalid:focus,
+    .was-validated &:invalid,
+    .was-validated &:focus:invalid {
+
+        box-shadow: 0 0 0 .125rem $form-feedback-invalid-color;
+        background-image: none;
+    }
+
+    &,
+    &.form-control-soft {
+        &[readonly] {
+            cursor: not-allowed;
+            background: $input-disabled-bg;
+            border-color: $input-disabled-border-color;
+        }
+
+        &[readonly]:focus {
+            box-shadow: none;
+            border-color: $input-disabled-border-color;
+        }
+    }
+
+    &:disabled::file-selector-button {
+        background-color: transparent;
+    }
+}
+
+.form-control-soft {
+
+    background: $ui-input-soft-bg;
+    border-color: $ui-input-soft-border-color;
+
+
+    &:focus {
+        background: $ui-input-soft-focus-bg;
+        box-shadow: none;
+        border-color: $ui-input-soft-border-color;
+    }
+
+    .form-floating &~label {
+        background: $ui-input-soft-bg;
+        background-clip: content-box;
+    }
+
+    &.form-control-focus~label,
+    &:not(:placeholder-shown)~label {
+        background: $body-bg;
+    }
+
+
+}
+
+
+.card {
+    & .form-control {
+        background: $card-bg;
+    }
+
+    & .form-control-soft {
+        background: $ui-input-soft-bg;
+        border-color: $ui-input-soft-border-color;
+    }
+}
+
+.modal-body {
+
+    & .form-control {
+        background: $modal-content-bg;
+    }
+
+    & .form-control-soft {
+        background: $ui-input-soft-bg;
+        border-color: $ui-input-soft-border-color;
+    }
+}

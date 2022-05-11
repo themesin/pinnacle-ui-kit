@@ -1,0 +1,14 @@
+@mixin animate-components ($key) {
+    
+    @include media-breakpoint-up($key) {
+        .animate-#{$key} {
+            will-change: transform;
+            animation: swing-#{$key} 3s ease-in-out infinite;
+        
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+
+}

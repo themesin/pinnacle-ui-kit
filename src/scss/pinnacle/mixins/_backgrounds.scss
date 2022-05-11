@@ -1,0 +1,24 @@
+@mixin bg-gradients-variant($name, $color) {
+    #{$name} {
+        background: linear-gradient(60deg, $color 0, adjust-hue(lighten($color, 10%), 18%) 100%) !important;
+    }
+}
+
+
+@mixin bg-overlay-variant($key, $color) {
+
+    #{$key} {
+        &:before {
+            background: $color;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            content: "";
+            top: 0;
+            left: 0;
+            z-index: 0;
+            opacity: .75;
+        }
+    }
+
+}

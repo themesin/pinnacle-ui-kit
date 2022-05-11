@@ -1,0 +1,33 @@
+<html lang="en">
+@@include("./_header.html", {"path":".."})
+
+<body>
+
+    @@include("./_navigation.html", {"path":"..", "navbg": "navbar-light", "theme":"pinnacle"})
+
+    <main>
+
+        <div class="content-header mt-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-2">Clients</h1>
+                        <p class="lead mt-3">
+                            Display client list of your business for your prospective customers. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @@include("./sections/_clients.html", {"path":".."})
+
+    </main>
+
+    @@include("./_footer.html", {"path":"..", "theme":"pinnacle"})
+
+    @@include("./_scripts.html", {"path":".."})
+
+
+</body>
+
+</html>

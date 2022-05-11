@@ -1,0 +1,321 @@
+// Body
+
+$ui-body-bg: $gray-100 !default;
+$ui-body-color: $gray-600 !default;
+$ui-headings-color: $gray-800 !default;
+
+$ui-link-color: $primary-color !default;
+$ui-link-shade-percentage: 30% !default;
+$ui-link-hover-color: $ui-link-color !default;
+
+$ui-border-color: $gray-300 !default;
+
+$ui-text-muted: $gray-600 !default;
+// Base 
+
+$ui-component-bg: $white !default;
+$ui-component-color: $gray-600 !default;
+$ui-component-border-color: $gray-400 !default;
+$ui-component-box-shadow-color: $gray-900 !default;
+
+$ui-component-header-color: null !default;
+$ui-component-header-bg: null !default;
+$ui-component-header-border-color: rgba($gray-900, .05) !default;
+
+$ui-component-active-color: $white !default;
+$ui-component-active-bg: $primary-color !default;
+
+$ui-component-disabled-bg: rgba($gray-400, .5) !default;
+$ui-component-disabled-border-color:$ui-component-disabled-bg !default;
+$ui-component-disabled-color: $gray-500 !default;
+
+
+
+
+
+
+// Accordion
+
+$ui-accordion-color: $ui-body-color !default;
+$ui-accordion-bg: $ui-body-bg !default;
+$ui-accordion-border-color: $ui-component-border-color !default;
+
+$ui-accordion-button-color: $ui-accordion-color !default;
+$ui-accordion-button-bg: $ui-accordion-bg !default;
+
+$ui-accordion-button-active-bg: $ui-body-bg !default;
+$ui-accordion-button-active-color: $primary-color !default;
+
+$ui-accordion-icon-color: $ui-accordion-color !default;
+$ui-accordion-icon-active-color: $primary-color !default;
+
+
+
+// Blocckquote
+
+$ui-blockquote-footer-color: $gray-600 !default;
+
+
+
+// Breadcrumb
+
+$ui-breadcrumb-bg: null !default;
+$ui-breadcrumb-divider-color: $gray-600 !default;
+$ui-breadcrumb-active-color: $gray-600 !default;
+
+
+
+// Card
+
+$ui-card-cap-bg: rgba($gray-900, .03) !default;
+$ui-card-cap-color: null !default;
+$ui-card-color: null !default;
+
+$ui-card-bg: $ui-component-bg !default;
+$ui-card-border-color: $ui-component-bg !default;
+
+
+
+// Code
+
+$ui-code-color: $pink !default;
+
+
+
+// Dropdown
+
+$ui-dropdown-color: $ui-body-color !default;
+$ui-dropdown-bg: $ui-component-bg !default;
+$ui-dropdown-border-color: $ui-dropdown-bg !default;
+$ui-dropdown-divider-bg: rgba($gray-800, .2) !default;
+
+$ui-dropdown-link-color: rgba($gray-800, .5) !default;
+$ui-dropdown-link-hover-color: $primary-color !default;
+$ui-dropdown-link-hover-bg: none !default;
+
+$ui-dropdown-link-active-color: $ui-dropdown-link-hover-color !default;
+$ui-dropdown-link-active-bg: $ui-dropdown-link-hover-bg !default;
+
+$ui-dropdown-link-disabled-color: $gray-500 !default;
+
+$ui-dropdown-header-color: $gray-600 !default;
+
+$ui-dropdown-dark-color: $gray-600 !default;
+$ui-dropdown-dark-bg: $gray-900 !default;
+$ui-dropdown-dark-border-color: $ui-dropdown-dark-bg !default;
+$ui-dropdown-dark-divider-bg: $ui-dropdown-divider-bg !default;
+
+$ui-dropdown-dark-link-color: $ui-dropdown-dark-color !default;
+
+$ui-dropdown-dark-link-hover-color: $gray-400 !default;
+$ui-dropdown-dark-link-hover-bg: $ui-dropdown-dark-bg !default;
+
+$ui-dropdown-dark-link-active-color: $ui-dropdown-dark-link-hover-color !default;
+$ui-dropdown-dark-link-active-bg: $ui-dropdown-dark-link-hover-bg !default;
+
+$ui-dropdown-dark-link-disabled-color: $gray-500 !default;
+$ui-dropdown-dark-header-color: $gray-600 !default;
+
+
+
+// Figure
+
+$ui-figure-caption-color: $gray-600 !default;
+
+
+
+// Forms
+
+$ui-input-bg: $ui-body-bg !default;
+
+$ui-input-disabled-bg: $ui-component-disabled-bg !default;
+$ui-input-disabled-border-color: $ui-input-disabled-bg !default;
+$ui-input-disabled-color: $ui-component-disabled-color !default;
+
+$ui-input-color: $gray-900 !default;
+$ui-input-border-color: $gray-300 !default;
+
+$ui-input-focus-border-color: $primary-color !default;
+$ui-input-focus-color: $ui-input-color !default;
+$ui-input-focus-box-shadow: 0 0 0 1.5px rgba($primary-color, .9) !default;
+
+$ui-input-placeholder-color: $gray-500 !default;
+
+$ui-form-check-input-bg: $gray-400 !default;
+$ui-form-check-input-checked-bg-color: $primary-color !default;
+$ui-form-check-input-checked-bg-image-fill: $primary-color !default;
+
+$ui-form-switch-color: $white !default;
+$ui-form-switch-focus-color: $white !default;
+$ui-form-switch-checked-color: $white !default;
+
+$ui-input-group-addon-bg: $ui-input-border-color !default;
+$ui-input-group-addon-border-color: $ui-input-border-color !default;
+$ui-input-group-focus-border-color: $ui-input-focus-border-color !default;
+
+$ui-form-select-disabled-bg: $gray-200 !default;
+$ui-form-select-indicator-color: $gray-800 !default;
+
+$ui-form-range-track-bg: $gray-300 !default;
+$ui-form-range-thumb-disabled-bg: $gray-500 !default;
+
+$ui-form-file-button-bg: $ui-input-border-color !default;
+$ui-form-file-button-hover-bg: $ui-form-file-button-bg !default;
+
+$ui-input-soft-bg: $gray-300 !default;
+$ui-input-soft-border-color: $gray-300 !default;
+$ui-input-soft-focus-bg: $gray-300 !default;
+
+
+
+//  Keyboard input
+
+$ui-kbd-color: $white !default;
+$ui-kbd-bg: $gray-900 !default;
+
+
+
+// List group
+
+$ui-list-group-color: $ui-body-color !default;
+$ui-list-group-bg: $ui-body-bg !default;
+$ui-list-group-border-color: $ui-border-color !default;
+
+$ui-list-group-item-bg-scale: 0% !default;
+$ui-list-group-item-color-scale: 50% !default;
+
+$ui-list-group-hover-bg: $ui-list-group-border-color !default;
+$ui-list-group-active-color: $ui-component-active-color !default;
+$ui-list-group-active-bg: $ui-component-active-bg !default;
+$ui-list-group-active-border-color: $ui-list-group-active-bg !default;
+
+$ui-list-group-disabled-color: $ui-component-disabled-color !default;
+$ui-list-group-disabled-bg: $ui-component-disabled-bg !default;
+
+$ui-list-group-action-color: $gray-700 !default;
+$ui-list-group-action-hover-color: $ui-list-group-action-color !default;
+
+$ui-list-group-action-active-color: $gray-900 !default;
+$ui-list-group-action-active-bg: $ui-list-group-bg !default;
+
+
+
+// Modal
+
+$ui-modal-content-color: null !default;
+$ui-modal-content-bg: $white !default;
+$ui-modal-content-border-color: $ui-modal-content-bg !default;
+$ui-modal-backdrop-bg: $gray-900 !default;
+$ui-modal-backdrop-opacity: .5 !default;
+
+
+
+// Navs
+
+$ui-nav-link-color: null !default;
+$ui-nav-link-hover-color: null !default;
+$ui-nav-link-disabled-color: $gray-500 !default;
+
+$ui-nav-tabs-border-color: $ui-input-border-color !default;
+$ui-nav-tabs-link-hover-border-color: $gray-200 $gray-200 $ui-nav-tabs-border-color !default;
+$ui-nav-tabs-link-active-color: $primary-color !default;
+$ui-nav-tabs-link-active-bg: $ui-body-bg !default;
+$ui-nav-tabs-link-active-border-color: $gray-300 $gray-300 $ui-nav-tabs-link-active-bg !default;
+
+$ui-nav-pills-link-active-color: $ui-component-active-color !default;
+$ui-nav-pills-link-active-bg: $ui-component-active-bg !default;
+
+
+//Navbar
+
+$ui-navbar-color-for-dark-bg: $gray-100 !default;
+$ui-navbar-color-for-light-bg: $gray-900 !default;
+
+// Pagination
+
+$ui-pagination-bg: none !default;
+$ui-pagination-color: $ui-link-color !default;
+$ui-pagination-border-color: $gray-300 !default;
+
+$ui-pagination-focus-color: $ui-link-hover-color !default;
+$ui-pagination-focus-bg: $ui-pagination-border-color !default;
+
+$ui-pagination-hover-color: $ui-link-hover-color !default;
+$ui-pagination-hover-bg: $ui-pagination-border-color !default;
+$ui-pagination-hover-border-color: $ui-pagination-border-color !default;
+
+$ui-pagination-active-color: $ui-component-active-color !default;
+$ui-pagination-active-bg: $ui-component-active-bg !default;
+$ui-pagination-active-border-color: $ui-pagination-active-bg !default;
+
+$ui-pagination-disabled-color: $gray-500 !default;
+$ui-pagination-disabled-bg: $white !default;
+$ui-pagination-disabled-border-color: $gray-300 !default;
+
+
+
+// Popover
+
+$ui-popover-bg: $white !default;
+
+$ui-popover-header-color: $gray-900 !default;
+
+
+
+
+// Progress
+
+$ui-progress-bg: $gray-300 !default;
+$ui-progress-bar-color: $white !default;
+$ui-progress-bar-bg: $primary-color !default;
+
+
+
+// Tooltip
+
+$ui-tooltip-color: $white !default;
+$ui-tooltip-bg: $primary-color !default;
+
+
+
+// Thumbnail
+
+$ui-thumbnail-border-color: $gray-300 !default;
+
+
+$ui-carousel-control-color: $white !default;
+$ui-carousel-caption-color: $white !default;
+
+$ui-carousel-dark-indicator-active-bg: $gray-900 !default;
+$ui-carousel-dark-caption-color: $gray-900 !default;
+
+
+$ui-btn-close-color: $gray-900 !default;
+
+$ui-hr-color: inherit !default;
+
+$ui-alert-color-scale: 30% !default;
+$ui-alert-bg-scale: 0% !default;
+$ui-alert-border-scale: 0% !default;
+
+$ui-mark-bg: #fcf8e3 !default;
+
+
+
+$ui-table-color: $ui-body-color !default;
+
+$ui-table-striped-bg-factor: .05 !default;
+$ui-table-striped-bg: rgba($gray-900, $ui-table-striped-bg-factor) !default;
+
+$ui-table-active-color: $ui-table-color !default;
+$ui-table-active-bg-factor: .1 !default;
+$ui-table-active-bg: rgba($gray-900, $ui-table-active-bg-factor) !default;
+
+$ui-table-hover-color: $gray-100 !default;
+$ui-table-hover-bg-factor: .9 !default;
+$ui-table-hover-bg: rgba($gray-900, $ui-table-hover-bg-factor) !default;
+
+$ui-table-border-factor: .1 !default;
+$ui-table-border-color: $ui-border-color !default;
+
+$ui-table-bg-scale: -80% !default;

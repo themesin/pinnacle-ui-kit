@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include("./_header.html", {"path":".."})
+
+<body>
+
+    @@include("./_navigation.html", {"path":"..", "navbg": "navbar-light", "theme":"pinnacle",
+    "logo":"logo-white"})
+
+    <main>
+
+        <div class="content-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-2">Badge</h1>
+                        <p class="lead opacity-75 mt-3">
+                            Badges, our small count and labeling component</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container elements-section elements-section-space">
+            <div class="row">
+                <div class="col-12">
+                    @@include("./components/_badge.html", {"path":".."})
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    @@include("./_footer.html", {"path":"..", "theme":"pinnacle"})
+
+    @@include("./_scripts.html", {"path":".."})
+
+
+</body>
+
+</html>

@@ -1,0 +1,16 @@
+.translate-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+[class*="link-"],
+[class*="btn-"] {
+    cursor: pointer;
+
+    &:hover {
+
+        & .translate-icon {
+            transform: translate3d(5px, 0, 0) !important;
+        }
+    }
+}

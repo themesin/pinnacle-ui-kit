@@ -1,0 +1,38 @@
+<html lang="en">
+@@include("./_header.html", {"path":".."})
+
+<body>
+
+    @@include("./_navigation.html", {"path":"..", "navbg": "navbar-light", "theme":"pinnacle"})
+
+    <main>
+        <div class="content-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-2">Breadcrumb</h1>
+                        <p class="lead opacity-75 mt-3">
+                            Indicate the current page’s location within a navigational hierarchy that automatically adds
+                            separators via CSS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-6">
+            <div class="row">
+                <div class="col-12">
+                    @@include("./components/_breadcrumb.html", {"path":"."})
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    @@include("./_footer.html", {"path":"..", "theme":"pinnacle"})
+
+    @@include("./_scripts.html", {"path":".."})
+
+
+</body>
+
+</html>

@@ -1,0 +1,13 @@
+.badge {
+    letter-spacing: .5px;
+    user-select: none;
+    text-rendering: optimizeLegibility;
+
+    &.badge-icon :first-child {
+        padding-right: .3125em;
+    }
+
+    &.badge-icon :last-child {
+        padding-left: .3125em;
+    }
+}

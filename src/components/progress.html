@@ -1,0 +1,40 @@
+<html lang="en">
+@@include("./_header.html", {"path":".."})
+
+<body>
+
+    @@include("./_navigation.html", {"path":"..", "navbg": "navbar-light", "theme":"pinnacle"})
+
+    <main>
+
+        <div class="content-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-2">Progress</h1>
+                        <p class="lead opacity-75 mt-3">
+                            Examples for using custom progress bars featuring support for stacked bars,
+                            animated backgrounds, and text labels
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-6">
+            <div class="row">
+                <div class="col-12">
+                    @@include("./components/_progress.html", {"path":".."})
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    @@include("./_footer.html", {"path":"..", "theme":"pinnacle"})
+
+    @@include("./_scripts.html", {"path":".."})
+
+
+</body>
+
+</html>
